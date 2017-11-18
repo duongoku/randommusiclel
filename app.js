@@ -26,6 +26,6 @@ app.get("/", (req,res) => {
 
 });
 
-app.listen(8888, () => {
-	console.log("App is listening on port 8888 . . .");
+app.listen(app.get('port'), () => {
+	console.log("App is listening . . .");
 });
