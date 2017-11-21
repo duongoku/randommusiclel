@@ -5,21 +5,53 @@
 
 	<title>Relax...</title>
 
-	<body background="./image/bg.jpg">
+	<body background="./image/bg.jpg" scroll="no" style="overflow: hidden">
 
-		<table width="100%" border="0" height="100%">
-		<tr><td>
+		<div class="the-container">
 
-		<div align="center">
+			<input type="checkbox" id="toggle"/>
+			<label for="toggle"></label>
 
-		
+			<div class="day-night-cont">
+				<span class="the-sun"></span>
+				<div class="the-moon"></div>
+			</div>
+			<div class="switch">
+				<div class="button">
+					<div class="b-inside"></div>
+				</div>
+			</div>
 
-		<p><a class="script">Playing [songdetails]</a></font></p>
+			<div class="c-window">
+
+				<span class="the-sun"></span>
+				<span class="the-moon"></span>
+
+					<div class="the-fox">
+						<div class="fox-face">
+							<section class="eyes left"></section>
+							<section class="eyes right"></section> 
+							<span class="nose"></span>
+							<div class="white-part"><span class="mouth"></span></div>
+						</div>
+					</div>
+
+			</div>
 
 		</div>
 
-		</td>
-		</tr>
+		<table width="100%" border="0" height="100%">
+			<tr>
+			<td>
+
+			<div align="center">
+
+				<p><a class="script">Playing [songdetails]</a></font></p>
+
+			</div>
+
+			</td>
+			</tr>
 		</table>
 
 		<audio autoplay loop>
