@@ -5,7 +5,7 @@ var app = express();
 var template = fs.readFileSync("home.html", "utf-8");
 var list = fs.readdirSync("./music");
 
-app.set('port', (process.env.PORT || 5000));
+var port = process.env.PORT || 8888;
 app.use("/", express.static(__dirname));
 
 function replace(str, tag, value) {
@@ -27,6 +27,6 @@ app.get("/", (req,res) => {
 
 });
 
-app.listen(app.get('port'), () => {
-	console.log("Running at locahost:" + app.get('port') + " . . .");
+app.listen(port, () => {
+	console.log("Running at locahost:" + port + " . . .");
 });
